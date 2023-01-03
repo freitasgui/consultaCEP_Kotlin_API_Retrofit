@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar CEP"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instrucao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Insira o CEP sem traço para obter os dados"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cepInserido"
+
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_below="@id/instrucao"
+        android:layout_margin="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:hint="00000000" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cepInserido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Pesquisar"
+        android:textColor="@color/white"/>
+
+    <TextView
+
+        android:layout_below="@id/btn"
+        android:layout_marginTop="10dp"
+        android:id="@+id/RUA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logradouro"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rua_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/RUA"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_below="@id/rua_edit"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bairro"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bairro_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/bairro"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_below="@id/bairro_edit"
+        android:layout_marginTop="10dp"
+        android:id="@+id/localidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Localidade"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/localidade_edit"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/localidade"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:id="@+id/uf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/localidade_edit"
+        android:layout_below="@id/localidade"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
